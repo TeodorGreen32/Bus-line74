@@ -5,9 +5,11 @@ function openModalWindow() {
     setTimeout(() => {
         modal.classList.toggle('modal-open');
         if(modal.classList.contains('modal-open')){
+            window.scrollTo({top:0})
             scrollLock.disablePageScroll();
+            
         }else{
-            console.log("123");
+            
             scrollLock.enablePageScroll();
         }
         setTimeout(() => {

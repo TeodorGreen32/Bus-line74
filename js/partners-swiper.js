@@ -4,6 +4,7 @@ const partners_swiper = new Swiper('.partners-swiper', {
     spaceBetween: 15,
     autoplay: true,
     loop: true,
+    speed: 800,
     breakpoints: {
         // when window width is >= 320px
         

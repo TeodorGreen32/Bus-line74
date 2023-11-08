@@ -3,6 +3,7 @@ const autopark_swiper = new Swiper('.autopark-swiper', {
     slidesPerView: 1,
     spaceBetween: 15,   
     loop: true,
+    speed: 800,
 
     // If we need pagination
     pagination: {

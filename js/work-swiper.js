@@ -3,6 +3,7 @@ const work_swiper = new Swiper('.work-swiper', {
     slidesPerView: 1,
     spaceBetween: 15,   
     loop: true,
+    speed: 800,
     breakpoints: {
         // when window width is >= 320px
         640: {

@@ -1,6 +1,6 @@
 const swiper = new Swiper('.main-swiper', {
     // Optional parameters
-    
+    speed: 800,
     loop: true,
   
     // If we need pagination
