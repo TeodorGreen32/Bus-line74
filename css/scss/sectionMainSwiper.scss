@@ -4,26 +4,20 @@
     overflow: hidden;
     position: relative;
 }
-.slide__text{
-    
-}
-.swiper-pagination{
+
+.slide__text {}
+
+.swiper-pagination {
     position: relative !important;
 }
-.swiper-control{
-    button{
-        border-radius: 32px;
-        background-color: $secondColor;
-        padding: 20px 60px;
-        color: white;
-        border-radius: 32px;
-        border: 1px solid transparent;
-        white-space: nowrap;
-    }
+
+.swiper-control {
+
     display: flex;
     align-items: center;
     justify-content: center;
-    .swiper-control__arrows{
+
+    .swiper-control__arrows {
         position: relative;
         // width: 50%;
         display: flex;
@@ -32,24 +26,29 @@
         justify-content: space-between;
     }
 }
-.swiper-pagination{
+
+.swiper-pagination {
     display: flex !important;
     justify-content: center;
     flex-direction: row !important;
     padding: 0em 1.5em;
-    .swiper-pagination-bullet{
+
+    .swiper-pagination-bullet {
         border-radius: 2px;
         margin: 0 !important;
         width: 100%;
         height: 1px;
     }
 }
-.swiper-pagination-bullet-active{
+
+.swiper-pagination-bullet-active {
     background-color: black !important;
-    height: 2px !important; 
+    height: 2px !important;
 }
-.swiper-button-prev,.swiper-button-next{
-    
+
+.swiper-button-prev,
+.swiper-button-next {
+
     position: relative !important;
     top: auto !important;
     left: auto !important;
@@ -60,19 +59,58 @@
     padding: 1.5em;
     border-radius: 50%;
     left: 0;
-    &::after{
+
+    &::after {
         font-size: 10px !important;
         color: black;
     }
-    &:hover{
+
+    &:hover {
         background-color: $secondColor;
-        &::after{
+
+        &::after {
             color: white;
         }
     }
 }
-.section_main-swiper-img{
-    video{
+
+.section_main-swiper-img {
+    video {
         border-bottom: 3px solid $mainBGcolor;
+    }
+}
+
+.btn__offer {
+    border-radius: 32px;
+    background-color: $secondColor;
+    padding: 20px 60px;
+    color: white;
+    border-radius: 32px;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    transition: all 0.25s ease;
+
+    &:hover {
+        border: 1px solid $secondColor;
+        background-color: $mainBGcolor;
+        color: $secondColor;
+
+    }
+}
+
+.btn__offer-white {
+    border-radius: 32px;
+    background-color: white;
+    padding: 20px 60px;
+    color: black;
+    border-radius: 32px;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    transition: all 0.25s ease;
+    &:hover {
+        border: 1px solid $mainBGcolor;
+        background-color: $secondColor;
+        color: $mainBGcolor;
+
     }
 }

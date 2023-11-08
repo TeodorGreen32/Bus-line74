@@ -1,23 +1,64 @@
 @import './vars.scss';
 @import './scss/header.scss';
+@import './scss/footer.scss';
 @import './scss/sectionMainSwiper.scss';
 @import './scss/descriptionSection.scss';
 @import './scss/sectionCallbackForm.scss';
+@import './scss/sectionAdvantages.scss';
+@import './scss/partnerSwiper.scss';
+@import './scss/sectionAutopark.scss';
+@import './scss/sectionAboutus.scss';
+@import './scss/sectionWorkSwiper.scss';
+@import './scss/sectionMap.scss';
+@import './scss/side-bar.scss';
 @import './fonts.scss';
-*{
+@import './scss/main-modal.scss';
+@import './scss/section-promo.scss';
+@import './media.scss';
+
+
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Formular';
 }
-ul{
+
+ul {
     margin: 0 !important;
 }
-body{
+
+body {
     background-color: $mainBGcolor !important;
 }
+
+// .container-sm{
+//     max-width: 1500px !important;
+// }
 .section-map,
+.section-callback-form,
+.section-advantages,
 .section-description-service,
-.section__main-swiper{
+.section__main-swiper,
+.section-partners,
+.section-aboutus,
+.section-autopark,
+.section-work-slider,.section-promo {
     margin-bottom: 120px;
+}
+
+@media (max-width:992px) {
+
+    .section-map,
+    .section-callback-form,
+    .section-advantages,
+    .section-description-service,
+    .section__main-swiper,
+    .section-partners,
+    .section-aboutus,
+    .section-autopark,
+    .section-work-slider {
+        margin-bottom: 50px;
+    }
 }

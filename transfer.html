@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Трансфер</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script defer src="./js/main-swiper.js"></script>
+    <script defer src="./js/partners-swiper.js"></script>
+    <script defer src="./js/header.js"></script>
+    <script defer src="./js/modal.js"></script>
+</head>
+<body>
+    <header class="header-element">
+        <div class="container-sm">
+            <div class="header__wrapper">
+                <div class="header__fast-navigation">
+                    <a href="#" class="header__logo"><img class="w-100"  src="./img/1_3-PhotoRoom.png" alt=""></a>
+                    <div class="header__nab-bar d-none d-xl-block">
+                        <ul>
+                            <a href="index.html">Проживание</a>
+                            <a href="transfer.html">Трансфер</a>
+                            <a href="">Контакты</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header__fast-contacts d-none d-xl-flex">
+                    <a href="" class="tel">+7 (423) 299-85-85</a>
+                    <a href="" class="e-mail">bideke6337@ustorp.com</a>
+                </div>
+                <div class="header__burger-menu-container gap-3 d-flex d-xl-none">
+                    <div class="header__mobile-tel">
+                        <img src="./svg/mobile-tel.svg" alt="">
+                    </div>
+                    <div onclick="clickBurger(this)" class="header__burger-menu">
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="side-bar">
+        <div class="container-sm">
+            <div class="sider-bar__wrapper d-flex flex-column gap-3">
+                <div class="wrapper__ul-list">
+                    <ul class="m-0 p-0 d-flex flex-column gap-2">
+                        <a href="index.html">Проживание</a>
+                        <a href="transfer.html">Трансфер</a>
+                        <a href="">Контакты</a>
+                    </ul>
+                </div>
+                <div class="wrapper__contact d-flex flex-column">
+                    <a href="" class="tel">+7 (423) 299-85-85</a>
+                    <a href="" class="e-mail">bideke6337@ustorp.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="section__main-swiper">
+        <div class="container-sm">
+            <div class="row">
+                <div class="col-12 d-block d-md-none">
+                    <div class="swiper-control__arrows d-flex gap-2 justify-content-end mb-3">
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+                <div class="col-12 mb-3 mb-lg-0 col-lg-6">
+                    <div class="row d-flex flex-column h-100 justify-content-between">
+                        <div class="col-12">
+                            <div class="main-swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide">
+
+                                        <div class="slide__text">
+                                            <div class="slide__title">
+                                                <h2>Услуги для бизнеса по организации проживания и перевозки для ваших
+                                                    сотрудников
+                                                </h2>
+                                            </div>
+                                            <div class="slide__desc">
+                                                <p>Нашими потенциальными клиентами являются предприятия использующие
+                                                    иногороднюю
+                                                    рабочую силу, производственные площадки которых расположены в городе
+                                                    челябинск а
+                                                    также в радиусе 100 км  вокруг города Челябинск</p>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="swiper-slide">Slide 2</div>
+                                    <div class="swiper-slide">Slide 3</div>
+                                    <div class="swiper-slide">Slide 3</div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="col-12 d-none d-md-block">
+                            <div class="swiper-control">
+                                <button onclick="openModalWindow()" class="btn__offer">
+                                    Оставить заявку
+                                </button>
+                                <!-- If we need pagination -->
+                                <div class="swiper-pagination"></div>
+
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-control__arrows">
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 d-block d-md-none">
+                            <button class="btn__offer">
+                                Оставить заявку
+                            </button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-12  col-lg-6">
+                    <div class="section_main-swiper-img">
+                        <!-- <img class="w-100" src="./img/slide-one.png" alt=""> -->
+                        <video loop autoplay playsinline muted width="100%">
+                            <source src="./video/960х600_BL_Main__slider.mp4" type="video/webm" />
+
+                            <source src="./video/960х600_BL_Main__slider.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-callback-form">
+        <div class="section-callback-form__container container-sm">
+            <div class="row h-100">
+                <div class="col">
+                    <form class="form-callback">
+                        <div class="form__title">
+                            <h2>Оставьте заявку</h2>
+                            <p>Оставьте заявку и наш специалист свяжется с вами в ближайшее время</p>
+                        </div>
+                        <input type="text" name="fio" placeholder="ФИО">
+                        <input type="tel" name="tel" placeholder="+7 (___) ___-__-__">
+                        <div class="form__submit">
+                            <div class="row">
+                                <div class="col-12 mb-3 mb-md-0 col-md-6">
+                                    <input class="btn__offer-white" type="submit" id="submit" value="Отправить заявку">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="submit">Нажимая кнопку оставляя заявку, Вы соглашаетесь с политикой
+                                        конфиденциальности</label>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+                    </form>
+                </div>
+                <div class="col d-none d-xxl-block">
+                    <img class="form__bg-img" src="./img/callbackFormBG-img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-promo">
+        <div class="container-sm">
+            <div class="section-promo__wrapper">
+                <div class="section-promo__section-1">
+                    <h2>700 человек в день</h2>
+                    <p>Максимальная мощность перевозок</p>
+                </div>
+                <div class="section-promo__section-2">
+                    <h2>15 автобусов</h2>
+                    <p>Единовременно</p>
+                </div>
+                <div class="section-promo__logo">
+                    <h2><img class="w-100"  src="./img/1_3-PhotoRoom.png" alt=""></h2>
+                </div>
+                <div class="section-promo__section-3">
+                    <h2>2 дня</h2>
+                    <p>Запуск перевозки</p>
+                </div>
+                <div class="section-promo__section-4">
+                    <h2>50 человек</h2>
+                    <p>Самый большой транспорт</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-partners">
+        <div class="container-sm">
+            <div class="section-partners__title-control mb-1 mb-sm-5 d-flex justify-content-between">
+                <h2 class="section-partners__title">Нам доверяют</h2>
+                <div class="section-partners__control d-none d-sm-block">
+                    <div class="swiper-control">
+
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-control__arrows">
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="partners-swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="logo-company">
+                            <img class="w-100" src="./img/partnerSwiperLogo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="logo-company">
+                            <img class="w-100" src="./img/partnerSwiperLogo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="logo-company">
+                            <img class="w-100" src="./img/partnerSwiperLogo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="logo-company">
+                            <img class="w-100" src="./img/partnerSwiperLogo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer-element">
+        <div class="footer-element-container container-sm">
+            <div class="footer-element__logo">
+                <img class="w-100"  src="./img/1_3-PhotoRoom.png" alt="">
+            </div>
+            <div class="row p-0 mb-5">
+                <div class="col-12 col-lg-5 mb-3 mb-lg-0">
+                    <div class="footer-element__wrapper">
+                        <div class="wrapper__contacts">
+                            <a href="tel:+74232998585">+7 (423) 299-85-85</a>
+                            <a class="footer__e-mail" href="mailto:bideke6337@ustorp.com">bideke6337@ustorp.com</a>
+                        </div>
+                        <div class="wrapper__adress">
+                            <a href="">454005, г. Челябинская область, Сосновский район</a>
+                            <p>Время работы c 9.00 до 19.00</p>
+                        </div>
+                        <div class="wrapper__social">
+                            <a href=""><img src="./svg/dzen.svg" alt=""></a>
+                            <a href=""><img src="./svg/telegram.svg" alt=""></a>
+                            <a href=""><img src="./svg/vk.svg" alt=""></a>
+                            <a href=""><img src="./svg/youtube.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-nav-bar col-12 col-lg-3 mb-3 mb-lg-0">
+                    <ul class="m-0 p-0">
+                        <a href="#">Проживание</a>
+                        <a href="#">Трансфер</a>
+                        <a href="#">Контакты</a>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3 mb-3 mb-lg-0">
+                    <button class="btn__offer-white">Реквизиты</button>
+                </div>
+                <div class=" col-12 col-lg-1">
+                    <button onclick="window.scrollTo({top:0})" class="button_to-header d-none d-lg-block"><img
+                            src="./svg/footer-btn-to-heaeder.svg" alt=""></button>
+                </div>
+            </div>
+            <div class="footer-element__lower">
+                <a class="privacy policy" href="">Политика конфединциальности</a>
+                <p>Обращаем Ваше внимание на то, что данный сайт носит исключительно информационный характер и ни при
+                    каких условиях информационные материалы и цены, размещенные на сайте, не являются публичной офертой.
+                </p>
+                <p>Bus-line74 © 2023</p>
+            </div>
+
+        </div>
+    </footer>
+    <div class="main-modal">
+        <div class="modal-content">
+            <h2>Оставьте заявку</h2>
+            <p>Оставьте заявку и наш специалист свяжется с вами в ближайшее время</p>
+            <button  class="modal-btn-close d-block d-lg-none"></button>
+            <form action="">
+                <input type="text" name="fio" placeholder="ФИО" required>
+                <input type="text" name="tel" placeholder="+7 (___) ___-__-__" required>
+                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Комментарий"></textarea>
+                <div class="submit-form-wrapper d-flex flex-column flex-sm-row gap-3 align-items-center justify-content-center">
+                    <input class="btn__offer-white" type="submit" value="Отправить зявку">
+                    <p>Нажимая кнопку оставляя заявку, Вы соглашаетесь с политикой конфиденциальности</p>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+    <!-- libs -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scroll-lock/2.1.5/scroll-lock.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>

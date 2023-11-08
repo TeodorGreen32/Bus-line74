@@ -1,0 +1,22 @@
+.autopark-swiper{
+    width: 100%;
+    overflow: hidden;
+}
+.autopark-swiper__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 50px;
+    .autopark__item-info{
+        p{
+            font-weight: 500;
+        }
+    }
+}
+.autopark__item-bg{
+    background-image: url('../../img/SectionAutopark-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

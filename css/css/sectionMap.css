@@ -1,0 +1,7 @@
+.section-map .section-map__element {
+  background-image: url("../../img/map.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 788px;
+}

@@ -1,0 +1,32 @@
+body{
+    position: relative;
+}
+.side-bar{
+    // visibility: hidden;
+    display: none;
+    transition: opacity 0s ease;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -200;
+    opacity: 0;
+}
+.side-bar-active{
+    transition: opacity 0.3s ease;
+    display: block;
+    position: absolute;
+    // visibility:visible;
+    opacity: 1;
+    
+    
+    z-index: 100;
+    background-color: $mainBGcolor;
+}
+.sider-bar__wrapper{
+    a{
+        font-size: 30px;
+        font-weight: 500;
+        color: black;
+        text-decoration: none;
+    }
+}

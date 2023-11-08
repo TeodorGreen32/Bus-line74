@@ -1,0 +1,94 @@
+.footer-element{
+    padding-bottom: 2em;
+    color: white;
+    .footer-element-container{
+        border-radius: 20px;
+        background:url('../../img/footer-bg.png'), linear-gradient(95.88deg, #6787F8 3.68%, #8CA1FA 64.26%, #C5C8FC 101.28%);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 50px 80px;
+    }
+    .footer-element__logo{
+        img{
+            max-height: 100px;
+            max-width: 100px;
+        }
+        font-size: 50px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+    .footer-element__wrapper{
+        font-size: 20px;
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        &>div{
+            display: flex;
+            flex-direction: column;
+        }
+        &>div:last-child{
+            flex-direction: row;
+            gap: 20px;
+        }
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .wrapper__adress{
+            p{
+                opacity: 0.6;
+            }
+        }
+        .wrapper__social{
+            opacity: 0.6;
+        }
+    }
+    .footer__e-mail{
+        font-size: 32px;
+    }
+    .footer-nav-bar{
+        
+        ul {
+            
+            display: flex;
+            flex-direction: column;
+            gap: 20px;  
+            width: max-content;
+            a {
+                
+                color: white;
+                font-size: 20px;
+                text-decoration: none;
+                border-bottom: 1px solid transparent;
+                transition: all 0.25s ease;
+                &:hover {
+                    border-bottom: 1px solid #000;
+    
+                }
+    
+            }
+        }
+    }
+    .button_to-header{
+        border: 2px solid white;
+        background-color: transparent;
+        color: white;
+        padding: 2em 2.2em;
+        border-radius: 100%;
+    }
+    .footer-element__lower{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        padding-top: 1em;
+        a{
+            color: white;
+        }
+        p{
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 12px;
+            max-width: 550px;
+        }
+    }
+}

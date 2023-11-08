@@ -7,14 +7,46 @@
     position: relative;
     overflow: hidden;
     border-radius: 20px;
+    .form__title{
+        h2{
+            white-space: nowrap;
+            font-size: 70px;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
     .form-callback{
+        border-radius: 15px;
+        padding: 2.5em;
+        color: white;
         height: 100%;
         display: flex;
         justify-content: center;
         flex-direction: column;
+        gap: 30px;
+        label{
+            font-size: 14px;
+        }
+        input:not(input[type='submit']){
+            border: 1px solid $mainBGcolor;
+            padding: 1.5em;
+            background-color: transparent;
+            backdrop-filter: blur(50px);
+            border-radius: 5px;
+            color: white;
+            &::placeholder{
+                color: white;
+            }
+            &:focus{
+                outline: none;
+                
+            }
+        }
     }
     .form__bg-img{
         position: absolute;
         right: -150px;
     }
+    
 }
